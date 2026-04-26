@@ -16,6 +16,13 @@ display summary statistics about travel times, stations, trip duration, and user
 - pandas
 - numpy
 
+### How to run
+Place the city CSV files in the project root, then run:
+
+```bash
+python bikeshare_starter.py
+```
+
 ### Files used
 - `bikeshare_starter.py`
 - `chicago.csv`
