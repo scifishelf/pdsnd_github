@@ -10,6 +10,7 @@ CITY_DATA = {
 MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
 DAYS = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
         'saturday', 'sunday']
+SEPARATOR = '-' * 40
 
 
 def get_valid_input(prompt, valid_options):
@@ -55,7 +56,7 @@ def get_filters():
         DAYS,
     )
 
-    print('-'*40)
+    print(SEPARATOR)
     return city, month, day
 
 
@@ -114,7 +115,7 @@ def time_stats(df):
     display_most_common(df, 'hour', 'start hour')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def station_stats(df):
@@ -137,7 +138,7 @@ def station_stats(df):
         print(f"Most frequent trip: {trip[0]} to {trip[1]}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def trip_duration_stats(df):
@@ -156,7 +157,7 @@ def trip_duration_stats(df):
         print(f"Mean travel time: {df['Trip Duration'].mean()}")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def user_stats(df):
@@ -189,7 +190,7 @@ def user_stats(df):
         print("\nBirth year data is not available for this city.")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print(SEPARATOR)
 
 
 def main():
