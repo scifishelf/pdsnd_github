@@ -14,17 +14,16 @@ display summary statistics about travel times, stations, trip duration, and user
 ### Requirements
 - Python 3
 - pandas
-- numpy
 
 ### How to run
 Place the city CSV files in the project root, then run:
 
 ```bash
-python bikeshare_starter.py
+python bikeshare.py
 ```
 
 ### Files used
-- `bikeshare_starter.py`
+- `bikeshare.py`
 - `chicago.csv`
 - `new_york_city.csv`
 - `washington.csv`
@@ -33,3 +32,5 @@ python bikeshare_starter.py
 This project is based on Udacity's Programming for Data Science with Python
 Nanodegree bikeshare project.
 https://www.udacity.com/enrollment/nd104
+
+GitHub profile: https://github.com/scifishelf
